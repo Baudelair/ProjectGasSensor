@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name KicadTestv1-cache)(type Legacy)(uri ${KIPRJMOD}/KicadTestv1-cache.lib)(options "")(descr ""))
+  (lib (name TestLib)(type Legacy)(uri ${KIPRJMOD}/TestLib.lib)(options "")(descr ""))
+)
