@@ -12,10 +12,12 @@ float gasMesure(float R0){
   ratio = RS_gas/R0;  // ratio = RS/R0
         /*-----------------------------------------------------------------------*/
 
+/*
   Serial.print("sensor_volt = ");
   Serial.println(sensor_volt);
   Serial.print("RS_ratio = ");
   Serial.println(RS_gas);
+  */
   Serial.print("Rs/R0 = ");
   Serial.println(ratio);
   Serial.print("\n\n");
