@@ -53,17 +53,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 2450 3450 2550
 $Comp
-L Connector_Generic_MountingPin:Conn_01x10_MountingPin J1
-U 1 1 5DDC7E9D
-P 5750 3800
-F 0 "J1" H 5838 3714 50  0000 L CNN
-F 1 "Conn_01x10_MountingPin" H 5838 3623 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" H 5750 3800 50  0001 C CNN
-F 3 "~" H 5750 3800 50  0001 C CNN
-	1    5750 3800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J2
 U 1 1 5DDCF554
 P 5100 2950
@@ -82,14 +71,12 @@ Text GLabel 5300 3400 0    50   Input ~ 0
 Tx
 Text GLabel 5300 3500 0    50   Input ~ 0
 Rx
-Text GLabel 5300 4000 0    50   Input ~ 0
+Text GLabel 5300 3700 0    50   Input ~ 0
 RST
 Wire Wire Line
 	5550 3400 5300 3400
 Wire Wire Line
 	5300 3500 5550 3500
-Wire Wire Line
-	5550 4000 5300 4000
 Text GLabel 2350 4200 0    50   Input ~ 0
 Tx
 Text GLabel 2350 4100 0    50   Input ~ 0
@@ -104,24 +91,12 @@ Connection ~ 3250 4950
 Wire Wire Line
 	3250 4950 3250 4800
 Wire Wire Line
-	4700 3150 4700 4300
-Wire Wire Line
-	4700 4300 5550 4300
-Wire Wire Line
-	4700 4950 4700 4300
-Connection ~ 4700 4300
-Wire Wire Line
-	4050 4200 4050 3050
-Wire Wire Line
 	4050 2550 3450 2550
-Wire Wire Line
-	4050 4200 5550 4200
 Connection ~ 3450 2550
 Wire Wire Line
 	3450 2550 3450 2700
 Wire Wire Line
 	4050 3050 4900 3050
-Connection ~ 4050 3050
 $Comp
 L Switch:SW_Push SW1
 U 1 1 5DDC1B30
@@ -198,4 +173,63 @@ Wire Wire Line
 	2750 3400 2350 3400
 Wire Wire Line
 	2750 4000 2350 4000
+$Comp
+L Shield_Arduino:RN2483A U1
+U 1 1 5DE7C31C
+P 5750 3750
+F 0 "U1" V 5704 3978 50  0000 L CNN
+F 1 "RN2483A" V 5795 3978 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" H 6100 3700 50  0001 C CNN
+F 3 "" H 6100 3700 50  0001 C CNN
+	1    5750 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 3150 4700 4100
+Wire Wire Line
+	5550 4100 4700 4100
+Connection ~ 4700 4100
+Wire Wire Line
+	4700 4100 4700 4950
+Wire Wire Line
+	5550 3700 5300 3700
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5DE826CD
+P 3300 2450
+F 0 "#PWR0101" H 3300 2300 50  0001 C CNN
+F 1 "+3V3" H 3315 2623 50  0000 C CNN
+F 2 "" H 3300 2450 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2450 3300 2700
+Wire Wire Line
+	3300 2700 3350 2700
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5DE833AF
+P 4950 3850
+F 0 "#PWR0102" H 4950 3700 50  0001 C CNN
+F 1 "+3V3" H 4965 4023 50  0000 C CNN
+F 2 "" H 4950 3850 50  0001 C CNN
+F 3 "" H 4950 3850 50  0001 C CNN
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3900 4950 3900
+Wire Wire Line
+	4950 3900 4950 3850
+Wire Wire Line
+	5550 4000 4950 4000
+Wire Wire Line
+	4950 4000 4950 3900
+Connection ~ 4950 3900
+Text GLabel 4050 3700 2    50   Input ~ 0
+A0
+Wire Wire Line
+	4050 3700 3750 3700
 $EndSCHEMATC
