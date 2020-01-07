@@ -30,7 +30,7 @@ On peut distinguer sur la partie haute à droite, le traitements du signal avec 
 
 ## Partie code 
 
-Dans un premier temps, pour le bon fonctionnement de tous les composants, une étape de calibration est nécessaire. Pour communiquer avec le réseau The Thing Network, il faut entrer des valeurs de clé comme la devAddr (adresse de notre réseau), nwkSKey (clé pour notre réseau) et appSKey (clé de l'application de notre réseau). Pour le capteur de gaz, on doit configurer R0 afin de ...
+Dans un premier temps, pour le bon fonctionnement de tous les composants, une étape de calibration est nécessaire. Pour communiquer avec le réseau The Thing Network, il faut entrer des valeurs de clé comme la devAddr (adresse de notre réseau), nwkSKey (clé pour notre réseau) et appSKey (clé de l'application de notre réseau). Pour le capteur de gaz, on doit configurer R0 afin de calibrer le capteur à l'atmosphère ambiante et ainsi détecter la présence d'un gaz après.
 Ensuite, viens l'étape où l'on récupére les données du capteur de gaz et on les envoie grâce à LoRa sur notre réseau. Par la suite, il est possible d'utiliser ces informations comme bon nous semble. 
 
 ## Elargissement
