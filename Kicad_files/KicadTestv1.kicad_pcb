@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu19.10.1)
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.2)-1")
 
   (general
     (thickness 1.6)
@@ -43,6 +43,8 @@
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
+    (segment_width 0.15)
+    (edge_width 0.15)
     (via_size 0.6)
     (via_drill 0.4)
     (via_min_size 0.4)
@@ -52,8 +54,6 @@
     (uvias_allowed no)
     (uvia_min_size 0.2)
     (uvia_min_drill 0.1)
-    (edge_width 0.15)
-    (segment_width 0.15)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -62,8 +62,9 @@
     (pad_size 4.064 4.064)
     (pad_drill 3.048)
     (pad_to_mask_clearance 0)
+    (solder_mask_min_width 0.25)
     (aux_axis_origin 110.998 126.365)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x00030_80000001)
       (usegerberextensions false)
@@ -486,7 +487,7 @@
     (descr "Arduino UNO R3, http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf")
     (tags "Arduino UNO R3")
     (path /5DDC2AFB)
-    (fp_text reference A1 (at 1.27 -3.81 180) (layer F.SilkS)
+    (fp_text reference A1 (at 0.1 2.08 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Arduino_UNO_R3 (at 0 22.86) (layer F.Fab)

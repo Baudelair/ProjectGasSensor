@@ -82,11 +82,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_Module_Arduino_UNO_R3
+# KicadTestv1-rescue_Arduino_UNO_R3-MCU_Module
 #
-DEF MCU_Module_Arduino_UNO_R3 A 0 20 Y Y 1 F N
+DEF KicadTestv1-rescue_Arduino_UNO_R3-MCU_Module A 0 20 Y Y 1 F N
 F0 "A" -400 925 50 H V L BNN
-F1 "MCU_Module_Arduino_UNO_R3" 200 -1050 50 H V L TNN
+F1 "KicadTestv1-rescue_Arduino_UNO_R3-MCU_Module" 200 -1050 50 H V L TNN
 F2 "Module:Arduino_UNO_R3" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
